@@ -1,0 +1,30 @@
+{
+  "name": "HZAVPlayer",
+  "version": "0.0.1",
+  "summary": "iOS 视频播放控件HZAVPlayer，支持竖屏模式下全屏播放，cell中播放视频，缓存",
+  "description": "iOS 视频播放控件HZAVPlayer，支持竖屏模式下全屏播放，cell中播放视频，缓存",
+  "homepage": "https://github.com/lanhaiyang/HZAVPlayer.git",
+  "authors": {
+    "sky": ""
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "git": "",
+    "tag": "0.0.1"
+  },
+  "resource_bundles": {
+    "HZAVPlayerBundles": [
+      "HZAVPlayer/HZAVPlayer/Resources/**/*"
+    ]
+  },
+  "frameworks": "MobileCoreServices",
+  "requires_arc": true,
+  "subspecs": [
+    {
+      "name": "Classes",
+      "source_files": "HZAVPlayer/HZAVPlayer/HZAVPlayer/**/*.{h,m}"
+    }
+  ]
+}
