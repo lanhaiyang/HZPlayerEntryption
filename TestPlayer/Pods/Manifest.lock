@@ -1,0 +1,43 @@
+PODS:
+  - GCDWebServer (3.5.4):
+    - GCDWebServer/Core (= 3.5.4)
+  - GCDWebServer/Core (3.5.4)
+  - HZAVPlayer (0.0.1):
+    - HZAVPlayer/Classes (= 0.0.1)
+  - HZAVPlayer/Classes (0.0.1)
+  - Masonry (1.1.0)
+  - SDWebImage (5.10.4):
+    - SDWebImage/Core (= 5.10.4)
+  - SDWebImage/Core (5.10.4)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - GCDWebServer (~> 3.5.4)
+  - HZAVPlayer (from `./`)
+  - Masonry (~> 1.1.0)
+  - SDWebImage
+  - YYKit
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - GCDWebServer
+    - Masonry
+    - SDWebImage
+    - YYKit
+
+EXTERNAL SOURCES:
+  HZAVPlayer:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
+  HZAVPlayer: 6e2e3b80cfb5bf106e88840e05c9f7ec2b07a4ff
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: a40a50fc5b9aa81c6d434a1877346b8e59fd6381
+
+COCOAPODS: 1.10.0
