@@ -23,8 +23,8 @@ reload(sys)
 
 
 Key = 'x3Y8JJ6a&r16iehu'# m3u8 加密key
-encKey = 'Pu!Wj3@V'# m3u8 加密key，在加密key
-
+encKey = 'Pu!Wj3@V'# m3u8 加密key，在加密key 限制8位
+hostUrl = 'http://127.0.0.1:8000'
 
 # 需要去生成一个DES对象
 def pad(text):
@@ -152,7 +152,7 @@ def files(req):
             #EXTM3U
             if line.endswith('#EXTM3U'):
                 m3u8FileEnc = m3u8FileEnc + line + '\n'
-                m3u8FileEnc = m3u8FileEnc + '#EXT-X-KEY:METHOD=AES-128,URI="http://127.0.0.1:8000/static/'+ soucesFileName + '/' + md5Dir+'/m3u8/key.key"\n'
+                m3u8FileEnc = m3u8FileEnc + '#EXT-X-KEY:METHOD=AES-128,URI="'+ hostUrl +'/static/'+ soucesFileName + '/' + md5Dir+'/m3u8/key.key"\n'
             elif line.endswith('.ts'):
                 try:
                     dir = m3u8Dir + '/' + line
@@ -173,8 +173,8 @@ def files(req):
                 m3u8FileEnc = m3u8FileEnc + line + '\n'
         text_create(m3u8Dir + '/' + m3u8File,m3u8FileEnc)# 生成加密后的m3u8
 
-        
-        return HttpResponse('上传成功 OK')
+        url = hostUrl + '/static/'+ soucesFileName + '/' + md5Dir+'/m3u8/'
+        return HttpResponse(url + '<br><br> 上传成功 OK')
     
 
 

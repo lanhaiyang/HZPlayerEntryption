@@ -140,7 +140,7 @@
     
     dispatch_async(dispatch_get_main_queue(), ^{
         
-        NSString *m3u8TopURL = @"http://127.0.0.1:8000/static/m3u8File/aa94765a94c01b8d8285d02974670b0b/m3u8/";
+        NSString *m3u8TopURL = @"http://127.0.0.1:8000/static/m3u8File/7780fd26e90fd558de924083c655c43e/m3u8/";
         NSString *url =[NSString stringWithFormat:@"%@%@",m3u8TopURL,@"video.m3u8"];
         NSData *m3u8Data = [NSData dataWithContentsOfURL:[NSURL URLWithString:url]];
         NSString *m3u8Content = [[NSString alloc] initWithData:m3u8Data encoding:NSUTF8StringEncoding];
