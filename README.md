@@ -16,7 +16,13 @@ python2  manage.py runserver 0.0.0.0:8000
 
 选择一个mp3或者mp4
 
+![](https://github.com/lanhaiyang/HZPlayerEntryption/blob/main/README/1%402x.png)
 
+- 点击`提交`等待
+
+![](https://github.com/lanhaiyang/HZPlayerEntryption/blob/main/README/2.png)
+
+- 复制链接
 
 ### 然后打开 TestPlayer
 
@@ -25,3 +31,10 @@ python2  manage.py runserver 0.0.0.0:8000
 -(void)configeMp4;//用来测试视频
 ```
 
+- 替换链接
+
+![](https://github.com/lanhaiyang/HZPlayerEntryption/blob/main/README/3.png)
+
+- ../key.key 解密秘钥 可以用在Server的views.py 里面修改
+
+![](https://github.com/lanhaiyang/HZPlayerEntryption/blob/main/README/4.png)
